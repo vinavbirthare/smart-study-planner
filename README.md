@@ -24,6 +24,8 @@ A simple web app to help plan your daily schedule.
 2. Enter your daily hours
 3. Add subjects
 4. Click "Generate Plan"
+## Preview
 
+![App Screenshot](project output screenshot.png)
 ## Author
 Vinav
