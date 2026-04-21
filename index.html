@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Study Planner</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<h1>SMART STUDY PLANNER</h1>
+
+<!-- Inputs -->
+<div class="inputs">
+    <input type="number" id="sleep" placeholder="Sleep Hours">
+    <input type="number" id="rest" placeholder="Rest Hours">
+    <input type="number" id="play" placeholder="Play Hours">
+    <input type="text" id="subjects" placeholder="Subjects (Math, Science, English)">
+    <button onclick="generatePlan()">Generate Plan</button>
+</div>
+
+<!-- Charts -->
+<div class="charts">
+
+    <div class="chart-box">
+        <h3>Pie Chart</h3>
+        <canvas id="pieChart"></canvas>
+    </div>
+
+    <div class="chart-box">
+        <h3>Bar Graph</h3>
+        <canvas id="barChart"></canvas>
+    </div>
+
+    <div class="chart-box">
+        <h3>Line Chart</h3>
+        <canvas id="lineChart"></canvas>
+    </div>
+
+    <div class="chart-box">
+        <h3>Histogram</h3>
+        <canvas id="histChart"></canvas>
+    </div>
+
+</div>
+
+<!-- Table -->
+<div class="table-section">
+    <h3>Study Plan Table</h3>
+    <div id="tableOutput"></div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
